@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="linear">
+		<item name="android:orientation">vertical</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_gravity">top</item>
+		<item name="android:textColor">#1f1c1b</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:background">#ddecef</item>
+		<item name="android:padding">2dp</item>
+	</style>
+	<style name="table">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:stretchColumns">1</item>
+		<item name="android:background">#ddecef</item>
+	</style>
+	<style name="row">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:paddingTop">4px</item>
+		<item name="android:paddingBottom">4px</item>
+		<item name="android:background">#ddecef</item>
+	</style>
+	<style name="list" parent="@android:style/Widget.AbsListView">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">4px</item>
+		<item name="android:paddingBottom">4px</item>
+		<item name="android:background">#ddecef</item>
+	</style>
+	<style name="listextracted" parent="android:Widget.ListView">
+		<item name="android:cacheColorHint">#00000000</item>
+		<item name="android:paddingBottom">4px</item>
+		<item name="android:paddingTop">4px</item>
+	</style>
+</resources>

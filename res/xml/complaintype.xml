@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<complaint_type>
+	<item code="HA" name="Home affairs"></item>
+	<item code="TC" name="Tourism and Civil Aviation"></item>
+	<item code="DF" name="Defense"></item>
+	<item code="SE" name="Security"></item>
+	<item code="PS" name="Public service"></item>
+	<item code="FR" name="Forestry"></item>
+	<item code="ED" name="Education"></item>
+	<item code="GA" name="General Administration"></item>
+	<item code="HE" name="Health"></item>
+	<item code="LJ" name="Law and justice"></item>
+	<item code="LD" name="Local Development"></item>
+	<item code="ST" name="Science and Technology"></item>
+	<item code="EN" name="Energy"></item>
+	<item code="SW" name="Social Welfare"></item>
+	<item code="EV" name="Environment"></item>
+	<item code="IN" name="Industry"></item>
+	<item code="SP" name="Sports"></item>
+	<item code="AG" name="Agriculture"></item>
+</complaint_type>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ddecef" >
+
+	<ImageView
+		android:id="@+id/menulogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/logomain"
+        >
+	</ImageView>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Sarkar"
+        android:textColor="#054950"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="makeComplainClick"
+        android:text="Make a Complain"
+        android:textColor="#ffffff" 
+        android:textSize="16sp"
+        android:background="@drawable/btnblue"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="listComplainClick"
+        android:text="Complain List" 
+        android:textColor="#ffffff" 
+        android:textSize="16sp"
+        android:background="@drawable/btnblue"/>
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ms_logo"/>
+
+</LinearLayout>

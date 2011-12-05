@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="complaint_type">
+        <item name="HA">Home affairs</item>
+        <item name="TC">Tourism and Civil Aviation</item>
+        <item name="DF">Defense</item>HelloSarkar
+        <item name="SE">Security</item>
+        <item name="PS">Public service</item>
+        <item name="FR">Forestry</item>
+        <item name="ED">Education</item>
+        <item name="GA">General Administration</item>
+        <item name="HE">Health</item>
+        <item name="LJ">Law and justice</item>
+        <item name="LD">Local Development</item>
+        <item name="ST">Science and Technology</item>
+        <item name="EN">Energy</item>
+        <item name="SW">Social Welfare</item>
+        <item name="EV">Environment</item>
+        <item name="IN">Industry</item>
+        <item name="SP">Sports</item>
+        <item name="AG">Agriculture</item>
+    </string-array>
+
+</resources>

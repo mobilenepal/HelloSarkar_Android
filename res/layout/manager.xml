@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear" >
+
+    <include layout="@layout/complainform"  android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <include layout="@layout/postbutton"  android:layout_width="match_parent" android:layout_height="wrap_content"/>
+      
+</LinearLayout>
