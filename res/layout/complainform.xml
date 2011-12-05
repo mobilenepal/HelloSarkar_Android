@@ -1,148 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/table" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:scrollbars="vertical">
 
-    <TableRow
-        style="@style/row"
-        android:layout_gravity="left"
-        android:gravity="center_vertical" >
+	<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
 
-        <TextView
-            android:id="@+id/tvName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#054950"
-            android:text="Name *"
-            android:textAppearance="?android:attr/textAppearanceMedium" 
-             />
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			style="@style/table">
 
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text|textCapWords"
-            android:layout_alignParentRight="true" >
-        </EditText>    
+			<TableRow style="@style/row" android:layout_gravity="left"
+				android:gravity="center_vertical">
 
-    </TableRow>
+				<TextView android:id="@+id/tvName" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#054950"
+					android:text="Name *" android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TableRow style="@style/row" android:layout_gravity="left"
-        android:gravity="center_vertical" >
+				<EditText android:id="@+id/etName" android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:inputType="text|textCapWords"
+					android:layout_alignParentRight="true">
+				</EditText>
 
-        <TextView
-            android:id="@+id/tvDistrict"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|center_vertical"
-            android:text="Districts"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#054950" />
+			</TableRow>
 
-        <Spinner
-            android:id="@+id/spDistrict"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true" >
-        </Spinner>
-    </TableRow>
+			<TableRow style="@style/row" android:layout_gravity="left"
+				android:gravity="center_vertical">
 
-    <TableRow style="@style/row" >
+				<TextView android:id="@+id/tvDistrict"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="left|center_vertical" android:text="Districts"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#054950" />
 
-        <TextView
-            android:id="@+id/tvComplain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#054950"
-            android:layout_gravity="left|center_vertical"
-            android:text="Complain Type"
-            android:textAppearance="?android:attr/textAppearanceMedium"  
-            />
+				<Spinner android:id="@+id/spDistrict" android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true">
+				</Spinner>
+			</TableRow>
 
-        <Spinner
-            android:id="@+id/spType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true">
-        </Spinner>
-    </TableRow>
+			<TableRow style="@style/row">
 
-    <TableRow style="@style/row" >
+				<TextView android:id="@+id/tvComplain"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="#054950" android:layout_gravity="left|center_vertical"
+					android:text="Complain Type" android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <TextView
-            android:id="@+id/tvAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#054950"
-            android:layout_gravity="left|center_vertical"
-            android:text="Detail Address *"
-            android:textAppearance="?android:attr/textAppearanceMedium" 
-             />
+				<Spinner android:id="@+id/spType" android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true">
+				</Spinner>
+			</TableRow>
 
-        <EditText
-            android:id="@+id/etAdd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPostalAddress"
-            android:layout_alignParentRight="true" >
-        </EditText>
-    </TableRow>
+			<TableRow style="@style/row">
 
-    <TableRow
-        style="@style/row"
-        android:textAppearance="?android:attr/textAppearanceMedium"  >
+				<TextView android:id="@+id/tvAdd" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#054950"
+					android:layout_gravity="left|center_vertical" android:text="Detail Address *"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#054950"
-            android:layout_gravity="left|center_vertical"
-            android:text="Date"
-            android:textAppearance="?android:attr/textAppearanceMedium" 
-            />
-         <LinearLayout 
-		android:layout_width="match_parent" 
-		android:layout_height="wrap_content" 
-		android:orientation="horizontal" 
-		android:layout_alignParentRight="true"
-		>
-            <TextView android:id="@+id/currentdate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Currnet Date"
-                android:textColor="#054950"
-                android:textAppearance="?android:attr/textAppearanceMedium"  >
-            </TextView>
-            <Button 
-            	android:id="@+id/pkdate"
-            	android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Pick a date">
-            </Button>
-		</LinearLayout>
-        
-    </TableRow>
+				<EditText android:id="@+id/etAdd" android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:inputType="textPostalAddress"
+					android:layout_alignParentRight="true">
+				</EditText>
+			</TableRow>
 
-    <TableRow style="@style/row" >
+			<TableRow style="@style/row" android:textAppearance="?android:attr/textAppearanceMedium">
 
-        <TextView
-            android:id="@+id/tvComplain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|center_vertical"
-            android:textColor="#054950"
-            android:text="Complain *"
-              />
+				<TextView android:id="@+id/tvDate" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#054950"
+					android:layout_gravity="left|center_vertical" android:text="Date"
+					android:textAppearance="?android:attr/textAppearanceMedium" />
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+					<TextView android:id="@+id/currentdate"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Currnet Date" android:textColor="#054950"
+						android:textAppearance="?android:attr/textAppearanceMedium">
+					</TextView>
+					<Button android:id="@+id/pkdate" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="Pick a date">
+					</Button>
+				</LinearLayout>
 
-        <EditText
-            android:id="@+id/etComplain"
-            android:layout_width="match_parent"
-            android:layout_height="150dip"
-            android:inputType="textMultiLine"
-            android:gravity="top"
-            android:layout_alignParentRight="true" >
-        </EditText>
-    </TableRow>
-  
+			</TableRow>
 
-</TableLayout>
+			<TableRow style="@style/row">
+
+				<TextView android:id="@+id/tvComplain"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="left|center_vertical" android:textColor="#054950"
+					android:text="Complain *" />
+
+				<EditText android:id="@+id/etComplain"
+					android:layout_width="match_parent" android:layout_height="150dip"
+					android:inputType="textMultiLine" android:gravity="top"
+					android:layout_alignParentRight="true">
+				</EditText>
+			</TableRow>
+		</TableLayout>
+	</HorizontalScrollView>
+</ScrollView>
